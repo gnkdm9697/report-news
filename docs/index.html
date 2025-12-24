@@ -20,73 +20,63 @@
             background-color: var(--bg-primary);
             color: var(--text-primary);
             line-height: 1.6;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
         }
-        .container { max-width: 600px; text-align: center; padding: 2rem; }
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        header { text-align: center; margin-bottom: 3rem; }
         h1 {
             font-size: 2.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .subtitle { color: var(--text-secondary); margin-bottom: 2rem; }
-        .status {
+        .subtitle { color: var(--text-secondary); }
+        .report-list { list-style: none; }
+        .report-item {
             background-color: var(--bg-secondary);
             border: 1px solid var(--border-color);
             border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
+            padding: 1rem 1.5rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        .status-icon { font-size: 3rem; margin-bottom: 1rem; }
-        .tools-list {
-            text-align: left;
-            list-style: none;
-            margin-top: 1rem;
+        .report-item:hover { border-color: var(--accent-blue); }
+        .report-date { font-weight: 600; }
+        .report-links a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            margin-left: 1rem;
         }
-        .tools-list li {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid var(--border-color);
-            color: var(--text-secondary);
-        }
-        .tools-list li:last-child { border-bottom: none; }
+        .report-links a:hover { text-decoration: underline; }
         footer {
-            margin-top: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
             color: var(--text-secondary);
-            font-size: 0.9rem;
         }
-        footer a { color: var(--accent-blue); text-decoration: none; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>AI CLI Tools News</h1>
-        <p class="subtitle">Daily news reports for AI-powered CLI development tools</p>
-
-        <div class="status">
-            <div class="status-icon">🚀</div>
-            <p>Coming Soon!</p>
-            <p style="color: var(--text-secondary); margin-top: 0.5rem;">
-                The first report will be generated at 9:00 AM JST.
-            </p>
-        </div>
-
-        <h3 style="margin-bottom: 0.5rem;">Tracking Tools:</h3>
-        <ul class="tools-list">
-            <li>🤖 Claude Code (Anthropic)</li>
-            <li>🧠 OpenAI Codex</li>
-            <li>✨ Gemini CLI (Google)</li>
-            <li>🔮 Grok Code (xAI)</li>
-            <li>🐙 GitHub Copilot CLI</li>
-            <li>📝 Cursor</li>
+        <header>
+            <h1>AI CLI Tools News</h1>
+            <p class="subtitle">Daily news reports for AI-powered CLI development tools</p>
+        </header>
+        <ul class="report-list">
+            
+            <li class="report-item">
+                <span class="report-date">2025-12-24</span>
+                <span class="report-links">
+                    <a href="reports/2025-12-24_ja.html">日本語</a>
+                    <a href="reports/2025-12-24_en.html">English</a>
+                </span>
+            </li>
         </ul>
-
         <footer>
-            <p>Powered by Gemini & Claude</p>
+            <p>Updated daily at 9:00 AM JST</p>
         </footer>
     </div>
 </body>
