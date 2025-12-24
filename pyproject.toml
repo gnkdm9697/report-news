@@ -1,0 +1,20 @@
+[project]
+name = "report-news"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "anthropic>=0.75.0",
+    "google-generativeai>=0.8.6",
+    "httpx>=0.28.1",
+    "jinja2>=3.1.6",
+    "python-dateutil>=2.9.0.post0",
+    "pyyaml>=6.0.3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "ruff>=0.14.10",
+]

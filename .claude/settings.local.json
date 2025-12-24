@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd:*)",
+      "Bash(cd /Users/genki/Library/Mobile\\\\ Documents/com~apple~CloudDocs/dev/report-news && uv run ruff check src/ main.py:*)"
+    ]
+  }
+}

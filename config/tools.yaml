@@ -1,0 +1,104 @@
+# AI CLIツール設定ファイル
+# 追跡対象のツールと検索キーワードを定義
+
+tools:
+  - name: Claude Code
+    vendor: Anthropic
+    keywords:
+      - "Claude Code"
+      - "Anthropic CLI"
+      - "claude-code"
+    search_queries:
+      - "Claude Code release OR update OR announcement"
+      - "Anthropic CLI tool"
+    official_links:
+      - https://www.anthropic.com
+      - https://github.com/anthropics/claude-code
+
+  - name: OpenAI Codex
+    vendor: OpenAI
+    keywords:
+      - "OpenAI Codex"
+      - "Codex CLI"
+      - "openai codex"
+    search_queries:
+      - "OpenAI Codex CLI release OR update"
+      - "Codex code generation tool"
+    official_links:
+      - https://openai.com
+
+  - name: Gemini CLI
+    vendor: Google
+    keywords:
+      - "Gemini CLI"
+      - "Google Gemini CLI"
+      - "gemini-cli"
+    search_queries:
+      - "Gemini CLI tool release OR update"
+      - "Google Gemini command line"
+    official_links:
+      - https://ai.google.dev
+      - https://github.com/google-gemini
+
+  - name: Grok Code
+    vendor: xAI
+    keywords:
+      - "Grok Code"
+      - "xAI Grok"
+      - "grok-code"
+    search_queries:
+      - "Grok Code xAI release OR update"
+      - "xAI coding assistant"
+    official_links:
+      - https://x.ai
+      - https://grok.x.ai
+
+  - name: GitHub Copilot CLI
+    vendor: GitHub/Microsoft
+    keywords:
+      - "GitHub Copilot CLI"
+      - "gh copilot"
+      - "Copilot in the CLI"
+    search_queries:
+      - "GitHub Copilot CLI release OR update"
+      - "gh copilot extension"
+    official_links:
+      - https://github.com/features/copilot
+      - https://docs.github.com/en/copilot
+
+  - name: Cursor
+    vendor: Cursor Inc.
+    keywords:
+      - "Cursor AI"
+      - "Cursor IDE"
+      - "Cursor editor"
+    search_queries:
+      - "Cursor AI IDE release OR update"
+      - "Cursor code editor AI"
+    official_links:
+      - https://cursor.com
+      - https://github.com/getcursor
+
+# 検索設定
+search:
+  # 過去何日分のニュースを取得するか
+  days_back: 1
+  # 各ツールの最大結果数
+  max_results_per_tool: 10
+  # 検索言語
+  languages:
+    - en
+    - ja
+
+# レポート設定
+report:
+  # 出力言語
+  languages:
+    - ja
+    - en
+  # 重要度レベル
+  importance_levels:
+    - critical  # メジャーリリース、重大な変更
+    - high      # 新機能、重要なアップデート
+    - medium    # バグ修正、マイナーアップデート
+    - low       # ドキュメント更新、軽微な変更
